@@ -1,0 +1,149 @@
+* {
+    box-sizing: border-box;
+    /* font */
+    font-family: "Averta CY", sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+
+/* Clear floats after the columns */
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.row {
+    padding-top: 50px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    font-size: 20px;
+    padding: 5px 15%;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    transition: 0.4s;
+}
+
+li {
+    float: left;
+    width: 20%;
+}
+
+li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    color: grey;
+}
+
+.filter {
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    background-color: rgba(255, 145, 145, 0.5);
+}
+
+#section_1 {
+    background-image: url('../img/seccion4_1.jpg');
+    background-size: cover;
+}
+
+#section_1 h1 {
+    text-align: center;
+}
+
+#section_1 {
+    background-color: white;
+}
+
+#section_2 {
+    background-color: white;
+}
+
+#section_2 {
+    text-align: center;
+}
+
+#section_3 {
+    background-color: rgb(226, 149, 149);
+}
+
+#section_3 h1 {
+    text-align: center;
+}
+
+#section_4 {
+    background-color: rgb(226, 149, 149);
+}
+
+#section_5 {
+    background-color: white;
+}
+
+#section_5 h1 {
+    text-align: center;
+}
+
+.one-column {
+    padding: 7%;
+}
+
+.two-column {
+    float: left;
+    padding: 2%;
+    width: 50%;
+}
+
+.two-column img {
+    width: 100%;
+}
+
+.two-column iframe {
+    width: 100%;
+}
+
+.four-column {
+    padding: 7%;
+    float: left;
+    width: 25%;
+}
+
+#footer {
+    color: white;
+    background-color: black;
+    text-align: center;
+}
+
+@media screen and (max-width:700px) {
+    .two-column,
+    .four-column,
+    .three-column {
+        width: 100%;
+    }
+    li a {
+        font-size: 3vw;
+    }
+    ul {
+        padding: 0px;
+    }
+    /* Responsive layout */
+    /* la clase two-column ha de tener ancho de 100% */
+    /* la clase four-column ha de tener ancho de 50% */
+    /* la clase h1 ha de tener tamaño de fuente de 6vw */
+    /* la clase h2 ha de tener tamaño de fuente de 5vw */
+    /* la clase h3 ha de tener tamaño de fuente de 4vw */
+    /* ...otros ajustes... */
+}
